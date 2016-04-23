@@ -1,0 +1,16 @@
+<script> 
+function delete1(id) 
+{ 
+  tr=document.getElementById(id); 
+  var par = tr.parentNode; 
+  par.removeChild(tr);   
+} 
+</script> 
+  
+<table> 
+<tr id="test1"><td>σορ</td></tr> 
+<tr id="test2"><td>σορ</td></tr> 
+<tr id="test3"><td>σορ</td></tr> 
+</table> 
+<input type="button" value="Del" onclick="delete1('test1')" /><input type="button" value="Del" onclick="delete1('test2')" /><input type="button" value="Del" onclick="delete1('test3')" />      
+ 

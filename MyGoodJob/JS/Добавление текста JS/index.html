@@ -1,0 +1,14 @@
+<div id="raz7">
+  <input type="button" value="Добавляем">
+</div>
+
+<script>
+(function(){
+var i = 1;
+document.querySelector('#raz7 input').onclick = function() {
+  var theText = document.createTextNode(' Бац'+i);
+  this.parentNode.appendChild(theText);
+  i++;
+}
+})()
+</script>

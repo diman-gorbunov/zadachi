@@ -1,0 +1,19 @@
+<style>
+#raz8 span {
+  display: inline-block;
+  padding: 3px;
+  border: 1px solid;
+}
+</style>
+
+<button type="button" id="raz8">Cтавим новый тег внутри</button>
+
+<script>
+(function(){
+var i = 1;
+document.querySelector('#raz8').onclick = function() {
+  this.innerHTML = '<span style="border-color: rgba(255,0,0,'+i+');">'+this.innerHTML+'</span>';
+  i = i - 0.1;
+}
+})()
+</script>
